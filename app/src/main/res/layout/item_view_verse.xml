@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/_2sdp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/chapter_selector"
+    app:cardCornerRadius="6.50dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5.00dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="36.40dp"
+                    android:layout_height="36.40dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/editmenu" />
+
+                <TextView
+                    android:id="@+id/tvVerse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="13.00dp"
+                    android:text="Verse"
+                    android:textColor="@color/orange"
+                    android:textSize="16.00sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVerseCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3.90dp"
+                    android:text="1"
+                    android:textColor="@color/orange"
+                    android:textSize="16.00sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="30.40dp"
+                    android:layout_height="30.40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="250.00dp"
+                    android:src="@drawable/fastforward"
+                    app:tint="@color/orange" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.00dp"
+                android:text="Select your favorite social network and share our icons with your contacts or friends. If you don’t have these social networks, simply copy the link and paste it in the one you use. For more" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130.00dp"
+            android:src="@drawable/verse_view"
+            android:paddingBottom="50.00dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/transparent"
+            android:alpha="0.6"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout5" />
+
+        <ImageView
+            android:layout_width="100.00dp"
+            android:layout_height="70.00dp"
+            android:src="@drawable/verse_bottom_left"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="0.5" />
+
+        <ImageView
+            android:layout_width="100.00dp"
+            android:layout_height="70.00dp"
+            android:alpha="0.3"
+            android:src="@drawable/up_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>            tools:layout_editor_absoluteY="45dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

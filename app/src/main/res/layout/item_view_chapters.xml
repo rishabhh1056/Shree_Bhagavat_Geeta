@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/_2sdp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="6.50dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="6.50dp"
+            android:background="@drawable/chapter_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvChapterNumber"
+                        android:text="chapter 1"
+                        android:textColor="@color/orange"
+                        android:textSize="15.60dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvChapterTitle"
+                        android:text="Arjuna Visada Yoga"
+                        android:textColor="@color/black"
+                        android:textSize="19.60dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/filedheart"
+                        android:layout_width="39.00dp"
+                        android:layout_height="39.00dp"
+                        android:hapticFeedbackEnabled="true"
+                        android:src="@drawable/filedheart"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/heart"
+                        android:layout_width="39.00dp"
+                        android:layout_height="39.00dp"
+                        android:backgroundTint="@color/orange"
+                        android:hapticFeedbackEnabled="true"
+                        android:src="@drawable/heart"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvChapterDescripation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="Shree Krishan Chaker is a name that appears to be derived from Indian mythology or culture, likely related to the Hindu deity Lord Krishna. However, doesn't have a direct translation in English in this context"
+                android:textColor="#7A7979"
+                android:textSize="15.60sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9.10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36.40dp"
+                    android:layout_height="36.40dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/baseline_dehaze_24" />
+
+                <TextView
+                    android:id="@+id/tvVerseCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="13.00dp"
+                    android:text="47"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVerse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3.90dp"
+                    android:text="Verse"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.10"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/up_left" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="130.00dp"
+            android:layout_height="130.00dp"
+            android:alpha="0.3"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/up_right" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="130.00dp"
+            android:layout_height="52.00dp"
+            android:alpha="0.5"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/verse_bottom_left" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
